@@ -1,6 +1,5 @@
 ﻿<div align="center">
 
-# ⚡ Wongsathorn Chapseethong (วงศธร ฉาบสีทอง)
 ### **Senior Full-Stack Software Engineer & Systems Architect**
 *High-Performance Web Architectures · Real-Time Systems · Interactive 3D Graphics · Distributed Systems · IT Infrastructure*
 
