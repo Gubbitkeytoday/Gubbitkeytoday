@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 ### **Senior Full-Stack Software Engineer & Systems Architect**
 *High-Performance Web Architectures · Real-Time Systems · Interactive 3D Graphics · Distributed Systems · IT Infrastructure*
@@ -31,6 +31,18 @@
 [📦 Projects Catalog](https://github.com/Gubbitkeytoday/Profile/blob/master/docs/PROJECTS_CATALOG.md) •
 [🏛️ Architecture Manual](https://github.com/Gubbitkeytoday/Profile/blob/master/docs/ARCHITECTURE.md) •
 [💬 Connect on LINE](https://line.me/ti/p/UzaC-aQ75C)
+
+</div>
+
+## 💡 Quick Highlights at a Glance (ประเด็นสำคัญใน 3 วินาที)
+
+<div align="center">
+
+| ⚡ High-Throughput &amp; Wasm | 💻 Windows Kernel &amp; Systems | 🤖 AI Agent &amp; Protocols | 🛡️ Zero-Bloat &amp; Certified |
+| :---: | :---: | :---: | :---: |
+| **60 FPS** on Web Worker | **&lt; 40 MB** RAM Footprint | **Gemini MCP** JSON-RPC 2.0 | **100/100** Lighthouse Perf |
+| Rust + WebAssembly Core | WinRT GSMTC + Local IPC | Real-Time SSE Streaming | **0** axe-core Violations |
+| 10 สาย · 193 สถานี · 8,193 เที่ยว | DirectX/Vulkan Game Pause | Character Studio &amp; Economy | WCAG 2.1 AA Full Certified |
 
 </div>
 
