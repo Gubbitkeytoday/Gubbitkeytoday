@@ -15,7 +15,7 @@
 
 [![WCAG 2.1 AA](https://img.shields.io/badge/WCAG_2.1_AA-0_axe--core_violations-3DDC97?style=flat-square&logo=w3c&logoColor=white)](https://www.w3.org/WAI/WCAG21/quickref/)
 [![Lighthouse Performance](https://img.shields.io/badge/Lighthouse-100%2F100-3DDC97?style=flat-square&logo=lighthouse&logoColor=white)](https://pagespeed.web.dev/)
-[![Shipped Builds](https://img.shields.io/badge/Shipped_Systems-16_Production_Builds-FF5C38?style=flat-square)](https://gubbitkeytoday.github.io/Profile/#work)
+[![Shipped Builds](https://img.shields.io/badge/Shipped_Systems-17_Production_Builds-FF5C38?style=flat-square)](https://gubbitkeytoday.github.io/Profile/#work)
 [![Architecture](https://img.shields.io/badge/Architecture-Zero--Bloat_Native_Standards-4CC9F0?style=flat-square)](https://github.com/Gubbitkeytoday/Profile)
 [![Core Stack](https://img.shields.io/badge/Core_Stack-Next.js_·_React_19_·_Rust%2FWasm_·_Python_·_MCP-blueviolet?style=flat-square)](#-technical-mastery--skills-matrix)
 [![Location](https://img.shields.io/badge/Location-Bangkok_%26_Hua_Hin%2C_Thailand_%F0%9F%87%B9%F0%9F%87%AD-F77F00?style=flat-square)](https://gubbitkeytoday.github.io/Profile/)
@@ -46,7 +46,7 @@ Rather than relying on uninspected boilerplate or heavy framework overhead, I en
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │                              SENIOR ENGINEERING BENCHMARKS                             │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
-│  ⚡ 16 Shipped Builds     │ Enterprise POS, AI Streaming, PRISM64 MCP, 3D Metro, E-Com │
+│  ⚡ 17 Shipped Builds     │ Enterprise POS, AI Streaming, PRISM64 MCP, Discord RPC, 3D │
 │  🚀 High Throughput       │ Rust + WebAssembly on Web Workers (60 FPS with 8,193 trips)│
 │  🔮 AI & Intelligence     │ Model Context Protocol (MCP), Gemini Spark, SSE Streaming  │
 │  🛡️ Zero Violations       │ 100/100 Lighthouse Performance · Fully Certified WCAG 2.1 AA│
@@ -73,6 +73,14 @@ A selection of mission-critical systems designed, benchmarked, and shipped:
 - **64-Shade Intelligence Matrix**: Blends HEXACO 6-factor psychological dimensions with 16 MBTI cognitive archetypes to generate 64 distinct personality shades.
 - **Gemini MCP JSON-RPC 2.0 Server**: Implements the Model Context Protocol (MCP) enabling AI agents to query psychometric vectors and behavioral predictions dynamically.
 - **9:16 Viral Story Studio**: High-DPI HTML5 Canvas rendering pipeline producing exportable Instagram Story cards and interactive geomap telemetry.
+
+---
+
+### 🎧 [Discord Rich Presence Pro — Windows Media Presence Engine](https://github.com/Gubbitkeytoday/discord-rich-presence-pro)
+> **Stack**: `Python 3.12` · `Windows WinRT` · `GSMTC API` · `Discord Local IPC` · `Pystray` · `PyInstaller`
+- **Native OS-Level GSMTC Interception**: Connects to Windows Media Transport Controls via WinRT to capture real-time playback across Chrome, Spotify, Apple Music, and Netflix with zero browser extensions.
+- **Sub-Second Timeline Anchoring**: Synchronizes track duration and elapsed time dynamically without drift or progress bar resets.
+- **DirectX/Vulkan Game Auto-Pause**: Automatically suppresses Discord status during full-screen gaming to protect FPS and system resources (<40 MB RAM, ~0% CPU).
 
 ---
 
