@@ -1,5 +1,6 @@
 ﻿<div align="center">
 
+# ⚡ Wongsathorn Chapseethong (วงศธร ฉาบสีทอง)
 ### **Senior Full-Stack Software Engineer & Systems Architect**
 *High-Performance Web Architectures · Real-Time Systems · Interactive 3D Graphics · Distributed Systems · IT Infrastructure*
 
@@ -168,15 +169,15 @@ A selection of mission-critical systems designed, benchmarked, and shipped:
   <table border="0">
     <tr>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Gubbitkeytoday&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&title_color=FF5C38&icon_color=3DDC97&text_color=94A3B8&bg_color=0D1117" alt="Gubbitkeytoday's GitHub Stats" />
+        <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Gubbitkeytoday&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&title_color=FF5C38&icon_color=3DDC97&text_color=94A3B8&bg_color=0D1117" alt="Gubbitkeytoday's GitHub Stats" />
       </td>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gubbitkeytoday&layout=compact&theme=tokyonight&hide_border=true&title_color=FF5C38&text_color=94A3B8&bg_color=0D1117" alt="Top Languages" />
+        <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Gubbitkeytoday&layout=compact&theme=tokyonight&hide_border=true&title_color=FF5C38&text_color=94A3B8&bg_color=0D1117" alt="Top Languages" />
       </td>
     </tr>
     <tr>
       <td colspan="2" align="center">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gubbitkeytoday&theme=tokyonight&hide_border=true&ring=FF5C38&fire=FF5C38&currStreakLabel=FF5C38&background=0D1117" alt="GitHub Streak Stats" />
+        <img src="https://streak-stats.demolab.com/?user=Gubbitkeytoday&theme=tokyonight&hide_border=true&ring=FF5C38&fire=FF5C38&currStreakLabel=FF5C38&background=0D1117" alt="GitHub Streak Stats" />
       </td>
     </tr>
   </table>
