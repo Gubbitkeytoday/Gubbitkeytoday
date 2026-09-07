@@ -15,7 +15,7 @@
 
 [![WCAG 2.1 AA](https://img.shields.io/badge/WCAG_2.1_AA-0_axe--core_violations-3DDC97?style=flat-square&logo=w3c&logoColor=white)](https://www.w3.org/WAI/WCAG21/quickref/)
 [![Lighthouse Performance](https://img.shields.io/badge/Lighthouse-100%2F100-3DDC97?style=flat-square&logo=lighthouse&logoColor=white)](https://pagespeed.web.dev/)
-[![Shipped Builds](https://img.shields.io/badge/Shipped_Systems-17_Production_Builds-FF5C38?style=flat-square)](https://gubbitkeytoday.github.io/Profile/#work)
+[![Shipped Builds](https://img.shields.io/badge/Shipped_Systems-18_Production_Builds-FF5C38?style=flat-square)](https://gubbitkeytoday.github.io/Profile/#work)
 [![Architecture](https://img.shields.io/badge/Architecture-Zero--Bloat_Native_Standards-4CC9F0?style=flat-square)](https://github.com/Gubbitkeytoday/Profile)
 [![Core Stack](https://img.shields.io/badge/Core_Stack-Next.js_·_React_19_·_Rust%2FWasm_·_Python_·_MCP-blueviolet?style=flat-square)](#-technical-mastery--skills-matrix)
 [![Location](https://img.shields.io/badge/Location-Bangkok_%26_Hua_Hin%2C_Thailand_%F0%9F%87%B9%F0%9F%87%AD-F77F00?style=flat-square)](https://gubbitkeytoday.github.io/Profile/)
@@ -58,7 +58,7 @@ Rather than relying on uninspected boilerplate or heavy framework overhead, I en
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
 │                              SENIOR ENGINEERING BENCHMARKS                             │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
-│  ⚡ 17 Shipped Builds     │ Enterprise POS, AI Streaming, PRISM64 MCP, Discord RPC, 3D │
+│  ⚡ 18 Shipped Builds     │ BKK Transit GTFS, Enterprise POS, AI MCP, Discord RPC, 3D  │
 │  🚀 High Throughput       │ Rust + WebAssembly on Web Workers (60 FPS with 8,193 trips)│
 │  🔮 AI & Intelligence     │ Model Context Protocol (MCP), Gemini Spark, SSE Streaming  │
 │  🛡️ Zero Violations       │ 100/100 Lighthouse Performance · Fully Certified WCAG 2.1 AA│
@@ -77,6 +77,14 @@ A selection of mission-critical systems designed, benchmarked, and shipped:
 - **60 FPS Wasm Engine**: Simulates Greater Bangkok's entire mass-transit network (10 lines, 193 stations, 8,193 daily trips) using real-world GTFS timetables.
 - **Compute Offloading**: Train position interpolation and route calculations computed in **Rust (Wasm)** running in dedicated **Web Workers**, eliminating main-thread UI jank.
 - **Dynamic 3D Camera & Journey Planner**: Features real-time train tracking, day/night lighting shaders, and multi-line A* pathfinding.
+
+---
+
+### 🚌 [BKK Transit — Bangkok Open Transit Platform & Routing Engine](https://github.com/Gubbitkeytoday/bkk-transit)
+> **Stack**: `Python 3.12` · `FastAPI` · `SQLite (FTS5 + Spatial)` · `Leaflet.js` · `GTFS Engine` · `Gemini MCP` · `Docker`
+- **GTFS Transit Routing Engine**: High-performance multi-modal route finder parsing official Bangkok GTFS feeds with transfers, timetable calculations, and distance metrics (<10ms routing).
+- **Interactive Geospatial Transit Map**: Real-time Leaflet.js mapping with bus stop discovery within 500m radius, route geometry visualization, and dark/light transit overlays.
+- **Gemini Model Context Protocol (MCP)**: Implements MCP tools (`bkk_plan_trip`, `bkk_nearby_stops`, `bkk_route_info`) enabling AI agents to plan real-world transit across Bangkok.
 
 ---
 
