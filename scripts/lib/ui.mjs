@@ -1,39 +1,35 @@
-// Transit-signage look: white enamel signs, coloured line bands, an amber LED board.
+import { pixelText, measure } from './font.mjs';
+
+// Bangkok-at-dusk palette shared by every card.
 export const C = {
-  ink: '#1c1c1e',
-  paper: '#ffffff',
-  panel: '#f5f2ed',
-  rule: '#e4dfd7',
-  muted: '#6e6a66',
-  brand: '#ff5c38',
-  board: '#141414',
-  boardEdge: '#2b2b2b',
-  ledOff: '#262320',
-  amber: '#ffb02e',
-  green: '#3ddc84',
+  ink: '#2b1d2e',
+  paper: '#fff8f0',
+  cream: '#fff1e2',
+  orange: '#ff5c38',
+  orangeSoft: '#ffd9cc',
+  peach: '#ffb38a',
+  yellow: '#ffcc4d',
+  muted: '#8a6f7d',
+  dash: '#ecd3c4',
+  plum: '#5b3a8c',
+  lilac: '#c9b6e4',
+  teal: '#2ec4b6',
 };
 
-// One colour per line on the system map.
-export const LINES = {
-  A: { name: 'AI & MCP Line', th: 'สาย AI', color: '#7b3fa0' },
-  T: { name: 'Transit Line', th: 'สายขนส่ง', color: '#2fa84f' },
-  W: { name: 'Web & Play Line', th: 'สายเว็บและเกม', color: '#e2457f' },
-  S: { name: 'Systems Line', th: 'สายระบบ', color: '#f07a12' },
-};
-
-export const SANS = "'Segoe UI','Helvetica Neue',Helvetica,Arial,'Leelawadee UI','Noto Sans Thai',Tahoma,sans-serif";
 export const MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace";
 
 export const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 const BASE_CSS = `
-  .pulse{animation:pulse 1.6s ease-in-out infinite}
-  @keyframes pulse{50%{opacity:.25}}
+  .blink{transform-box:fill-box;transform-origin:center;animation:blink 5s infinite}
+  @keyframes blink{0%,94%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+  .bob{animation:bob 1.6s steps(2) infinite}
+  @keyframes bob{50%{transform:translateY(-3px)}}
   @media (prefers-reduced-motion:reduce){*{animation:none!important}}`;
 
 /** Wrap a card body in a standalone, accessible SVG document. */
 export function svgDoc({ w, h, title, body, defs = '', css = '' }) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}" shape-rendering="crispEdges">
 <title>${esc(title)}</title>
 <style>${BASE_CSS}${css}</style>
 <defs>${defs}</defs>
@@ -41,37 +37,42 @@ ${body}
 </svg>\n`;
 }
 
-/** SVG <text>. `font` defaults to the sans stack. */
-export const text = (x, y, str, { size = 13, fill = C.ink, weight = 400, anchor = 'start', font = SANS, extra = '' } = {}) =>
-  `<text x="${x}" y="${y}" font-family="${font}" font-size="${size}" font-weight="${weight}" fill="${fill}" text-anchor="${anchor}"${extra}>${esc(str)}</text>`;
-
-export const mono = (x, y, str, opts = {}) => text(x, y, str, { font: MONO, ...opts });
-
-/** Enamel sign: white panel with a soft drop shadow and hairline border. */
-export function sign(x, y, w, h, { fill = C.paper, r = 14 } = {}) {
-  return `<rect x="${x}" y="${y + 3}" width="${w}" height="${h}" rx="${r}" fill="#000" opacity=".12"/>
-<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="${fill}" stroke="${C.rule}" stroke-width="1.5"/>`;
+/** Card frame: cream body, ink outline, hard orange shadow offset to the bottom right. */
+export function frame(x, y, w, h, { fill = C.paper, shadow = C.orange, r = 16, stroke = 3 } = {}) {
+  return `<rect x="${x + 7}" y="${y + 7}" width="${w}" height="${h}" rx="${r}" fill="${shadow}" stroke="${C.ink}" stroke-width="${stroke}"/>
+<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="${fill}" stroke="${C.ink}" stroke-width="${stroke}" shape-rendering="geometricPrecision"/>`;
 }
 
-/** Rough text width for the sans stack; good enough for layout. */
-export const textWidth = (str, size, weight = 400) => [...str].length * size * (weight >= 600 ? 0.58 : 0.53);
+/** Section tab that sits on the top edge of a frame. */
+export function tab(x, y, label, { fill = C.orange, scale = 3 } = {}) {
+  const w = measure(label, scale) + 28;
+  const h = 7 * scale + 18;
+  return `<rect x="${x + 4}" y="${y + 4}" width="${w}" height="${h}" rx="8" fill="${C.ink}"/>
+<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" fill="${fill}" stroke="${C.ink}" stroke-width="3"/>
+${pixelText(label, { x: x + 14, y: y + 9, scale, fill: '#fff', shadow: C.ink, shadowOffset: scale > 2 ? 2 : 1 })}`;
+}
 
-/** Pill-shaped tag. Returns { svg, w }. */
-export function pill(x, y, label, { fill = C.panel, color = C.ink, size = 10.5, stroke = 'none' } = {}) {
-  const w = Math.round(textWidth(label, size, 600) + 16);
-  const h = size + 9;
+/** Small rounded tag such as a tech chip. Returns { svg, w }. */
+export function chip(x, y, label, { fill = C.cream, color = C.ink, size = 11 } = {}) {
+  const w = Math.round(label.length * size * 0.62 + 16);
   return {
     w,
-    svg: `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${h / 2}" fill="${fill}" stroke="${stroke}"/>
-${text(x + w / 2, y + size + 2.5, label, { size, fill: color, weight: 600, anchor: 'middle' })}`,
+    svg: `<rect x="${x}" y="${y}" width="${w}" height="${size + 9}" rx="${(size + 9) / 2}" fill="${fill}" stroke="${C.ink}" stroke-width="1.5"/>
+<text x="${x + w / 2}" y="${y + size + 2}" text-anchor="middle" font-family="${MONO}" font-size="${size}" font-weight="700" fill="${color}">${esc(label)}</text>`,
   };
 }
 
-export function timeAgo(iso, now) {
-  const days = Math.floor((now - new Date(iso)) / 864e5);
-  if (days <= 0) return 'today';
-  if (days === 1) return '1 day ago';
-  if (days < 30) return `${days} days ago`;
-  const months = Math.floor(days / 30);
-  return months === 1 ? '1 month ago' : `${months} months ago`;
+export const mono = (x, y, str, { size = 13, fill = C.ink, weight = 400, anchor = 'start', extra = '' } = {}) =>
+  `<text x="${x}" y="${y}" font-family="${MONO}" font-size="${size}" font-weight="${weight}" fill="${fill}" text-anchor="${anchor}"${extra}>${esc(str)}</text>`;
+
+/** Deterministic PRNG so the skyline doesn't reshuffle on every daily build. */
+export function rng(seed = 7) {
+  let s = seed >>> 0;
+  return () => {
+    s = (s + 0x6d2b79f5) >>> 0;
+    let t = s;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
 }

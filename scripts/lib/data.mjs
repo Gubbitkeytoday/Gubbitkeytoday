@@ -31,8 +31,9 @@ export async function contributions(user) {
  * Fallback for when the calendar is empty because commits were made with an email
  * that isn't linked to the account: count commits in the user's own repos instead.
  */
-export async function commitCalendar(days, repos) {
+export async function commitCalendar(user, days) {
   const since = `${days[0].date}T00:00:00Z`;
+  const repos = await (await get(`https://api.github.com/users/${user}/repos?per_page=100&type=owner`, 'application/vnd.github+json')).json();
   const counts = new Map();
   for (const repo of repos.filter((r) => !r.fork && r.pushed_at >= since)) {
     for (let page = 1; page <= 5; page++) {
@@ -55,10 +56,9 @@ export async function commitCalendar(days, repos) {
 
 const bangkokDate = (iso) => new Date(new Date(iso).getTime() + 7 * 3600e3).toISOString().slice(0, 10);
 
-/** The user's own public repos (name, language, pushed_at, …), most recently pushed first. */
-export async function repoList(user) {
-  const repos = await (await get(`https://api.github.com/users/${user}/repos?per_page=100&type=owner&sort=pushed`, 'application/vnd.github+json')).json();
-  return repos.filter((r) => !r.fork && r.name !== user);
+export async function publicRepos(user) {
+  const json = await (await get(`https://api.github.com/users/${user}`, 'application/vnd.github+json')).json();
+  return json.public_repos;
 }
 
 /** Totals and streaks. A zero today doesn't break the current streak until the day is over. */

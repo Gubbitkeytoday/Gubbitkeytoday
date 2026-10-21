@@ -83,8 +83,6 @@ const G = {
   '_': ['....', '....', '....', '....', '....', '....', '####'],
   '✦': ['.....', '..#..', '.###.', '#####', '.###.', '..#..', '.....'],
   '♥': ['.....', '.#.#.', '#####', '#####', '.###.', '..#..', '.....'],
-  '<': ['...#', '..#.', '.#..', '#...', '.#..', '..#.', '...#'],
-  '>': ['#...', '.#..', '..#.', '...#', '..#.', '.#..', '#...'],
 };
 
 const glyph = (ch) => G[ch] ?? G['?'];
@@ -142,23 +140,4 @@ export function pixelText(str, { x = 0, y = 0, scale = 2, fill = '#000', shadow,
   }
   out += `<path d="${textPath(str, left, y, scale, gap)}" fill="${fill}"/>`;
   return cls ? `<g class="${cls}">${out}</g>` : out;
-}
-
-/** The same glyphs drawn as round LED dots, `pitch` px apart. */
-export function ledPath(str, x, y, pitch, radius = pitch * 0.38, gap = 1) {
-  let d = '';
-  let cx = 0;
-  for (const ch of str) {
-    const rows = glyph(ch);
-    rows.forEach((row, ry) => {
-      for (let rx = 0; rx < row.length; rx++) {
-        if (row[rx] !== '#') continue;
-        const px = x + (cx + rx) * pitch + pitch / 2;
-        const py = y + ry * pitch + pitch / 2;
-        d += `M${r(px - radius)} ${r(py)}a${r(radius)} ${r(radius)} 0 1 0 ${r(radius * 2)} 0a${r(radius)} ${r(radius)} 0 1 0 ${r(-radius * 2)} 0`;
-      }
-    });
-    cx += rows[0].length + gap;
-  }
-  return d;
 }
