@@ -2,12 +2,12 @@
 // Pixel-font fields (title, screen, tab labels) only support A-Z, a-z, 0-9 and simple punctuation.
 
 export const profile = {
-  user: 'Gubbitkeytoday',
+  user: 'moo-krub',
   title: 'm0oMoo',
   tagline: 'full-stack & real-time',
 
   links: [
-    { id: 'web', label: 'PORTFOLIO', sub: 'gubbitkeytoday.github.io', icon: 'web', href: 'https://gubbitkeytoday.github.io/Profile/' },
+    { id: 'web', label: 'PORTFOLIO', sub: 'moo-krub.github.io', icon: 'web', href: 'https://moo-krub.github.io/Profile/' },
     { id: 'line', label: 'LINE', sub: 'chat with me', icon: 'line', href: 'https://line.me/ti/p/UzaC-aQ75C' },
     { id: 'mail', label: 'EMAIL', sub: 'pushilkun@gmail.com', icon: 'mail', href: 'mailto:pushilkun@gmail.com' },
     { id: 'github', label: 'MAIN ACCT', sub: '@GitBababoo', icon: 'cat', href: 'https://github.com/GitBababoo' },
@@ -35,8 +35,8 @@ export const profile = {
   },
 
   quests: {
-    more: '+ more on gubbitkeytoday.github.io/Profile',
-    href: 'https://gubbitkeytoday.github.io/Profile/',
+    more: '+ more on moo-krub.github.io/Profile',
+    href: 'https://moo-krub.github.io/Profile/',
     items: [
       { screen: 'RAIL', year: '2026', badge: 'LIVE', name: 'Metro Mini 3D', desc: ['bangkok rail in 3d,', '193 stations, gtfs'], where: 'metro.itstom.me', chips: ['TS', 'Rust', 'Three.js'] },
       { screen: 'BKK', year: '2026', badge: 'MCP SERVER', name: 'BKK Transit', desc: ['transit routing +', 'mcp for ai agents'], where: 'bkk-transit', chips: ['Python', 'FastAPI'] },
