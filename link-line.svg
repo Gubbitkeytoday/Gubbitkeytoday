@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="214" height="64" viewBox="0 0 214 64" role="img" aria-label="LINE — chat with me" shape-rendering="crispEdges">
+<title>LINE — chat with me</title>
+<style>
+  .blink{transform-box:fill-box;transform-origin:center;animation:blink 5s infinite}
+  @keyframes blink{0%,94%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+  .bob{animation:bob 1.6s steps(2) infinite}
+  @keyframes bob{50%{transform:translateY(-3px)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<defs></defs>
+
+<rect x="7" y="7" width="204" height="54" rx="12" fill="#2b1d2e"/>
+<rect x="3" y="3" width="204" height="54" rx="12" fill="#fff8f0" stroke="#2b1d2e" stroke-width="3" shape-rendering="geometricPrecision"/>
+<rect x="11" y="10" width="42" height="40" rx="8" fill="#fff1e2" stroke="#2b1d2e" stroke-width="2"/>
+<g class="bob" style="animation-duration:2.4s"><path d="M21.5 16.5h21v3h-21zM18.5 19.5h3v3h-3zM42.5 19.5h3v3h-3zM15.5 22.5h3v3h-3zM45.5 22.5h3v3h-3zM15.5 25.5h3v3h-3zM45.5 25.5h3v3h-3zM15.5 28.5h3v3h-3zM45.5 28.5h3v3h-3zM18.5 31.5h3v3h-3zM42.5 31.5h3v3h-3zM21.5 34.5h9v3h-9zM33.5 34.5h9v3h-9zM27.5 37.5h3v3h-3zM33.5 37.5h3v3h-3zM30.5 40.5h3v3h-3z" fill="#2b1d2e"/><path d="M21.5 19.5h21v3h-21zM18.5 22.5h27v3h-27zM18.5 25.5h3v3h-3zM24.5 25.5h6v3h-6zM33.5 25.5h6v3h-6zM42.5 25.5h3v3h-3zM18.5 28.5h27v3h-27zM21.5 31.5h21v3h-21zM30.5 34.5h3v3h-3zM30.5 37.5h3v3h-3z" fill="#06c755"/><path d="M21.5 25.5h3v3h-3zM30.5 25.5h3v3h-3zM39.5 25.5h3v3h-3z" fill="#ffffff"/></g>
+<path d="M64 16h2v2h-2zM64 18h2v2h-2zM64 20h2v2h-2zM64 22h2v2h-2zM64 24h2v2h-2zM64 26h2v2h-2zM64 28h10v2h-10zM76 16h6v2h-6zM78 18h2v2h-2zM78 20h2v2h-2zM78 22h2v2h-2zM78 24h2v2h-2zM78 26h2v2h-2zM76 28h6v2h-6zM84 16h2v2h-2zM92 16h2v2h-2zM84 18h4v2h-4zM92 18h2v2h-2zM84 20h2v2h-2zM88 20h2v2h-2zM92 20h2v2h-2zM84 22h2v2h-2zM90 22h4v2h-4zM84 24h2v2h-2zM92 24h2v2h-2zM84 26h2v2h-2zM92 26h2v2h-2zM84 28h2v2h-2zM92 28h2v2h-2zM96 16h10v2h-10zM96 18h2v2h-2zM96 20h2v2h-2zM96 22h8v2h-8zM96 24h2v2h-2zM96 26h2v2h-2zM96 28h10v2h-10z" fill="#ffd9cc"/><path d="M63 15h2v2h-2zM63 17h2v2h-2zM63 19h2v2h-2zM63 21h2v2h-2zM63 23h2v2h-2zM63 25h2v2h-2zM63 27h10v2h-10zM75 15h6v2h-6zM77 17h2v2h-2zM77 19h2v2h-2zM77 21h2v2h-2zM77 23h2v2h-2zM77 25h2v2h-2zM75 27h6v2h-6zM83 15h2v2h-2zM91 15h2v2h-2zM83 17h4v2h-4zM91 17h2v2h-2zM83 19h2v2h-2zM87 19h2v2h-2zM91 19h2v2h-2zM83 21h2v2h-2zM89 21h4v2h-4zM83 23h2v2h-2zM91 23h2v2h-2zM83 25h2v2h-2zM91 25h2v2h-2zM83 27h2v2h-2zM91 27h2v2h-2zM95 15h10v2h-10zM95 17h2v2h-2zM95 19h2v2h-2zM95 21h8v2h-8zM95 23h2v2h-2zM95 25h2v2h-2zM95 27h10v2h-10z" fill="#ff5c38"/>
+<text x="63" y="44" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="700" fill="#2b1d2e" text-anchor="start">chat with me</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="214" height="64" viewBox="0 0 214 64" role="img" aria-label="EMAIL — pushilkun@gmail.com" shape-rendering="crispEdges">
+<title>EMAIL — pushilkun@gmail.com</title>
+<style>
+  .blink{transform-box:fill-box;transform-origin:center;animation:blink 5s infinite}
+  @keyframes blink{0%,94%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+  .bob{animation:bob 1.6s steps(2) infinite}
+  @keyframes bob{50%{transform:translateY(-3px)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<defs></defs>
+
+<rect x="7" y="7" width="204" height="54" rx="12" fill="#2b1d2e"/>
+<rect x="3" y="3" width="204" height="54" rx="12" fill="#fff8f0" stroke="#2b1d2e" stroke-width="3" shape-rendering="geometricPrecision"/>
+<rect x="11" y="10" width="42" height="40" rx="8" fill="#fff1e2" stroke="#2b1d2e" stroke-width="2"/>
+<g class="bob" style="animation-duration:2.4s"><path d="M15.5 18h33v3h-33zM15.5 21h6v3h-6zM42.5 21h6v3h-6zM15.5 24h3v3h-3zM21.5 24h3v3h-3zM39.5 24h3v3h-3zM45.5 24h3v3h-3zM15.5 27h3v3h-3zM24.5 27h3v3h-3zM36.5 27h3v3h-3zM45.5 27h3v3h-3zM15.5 30h3v3h-3zM27.5 30h9v3h-9zM45.5 30h3v3h-3zM15.5 33h3v3h-3zM45.5 33h3v3h-3zM15.5 36h3v3h-3zM45.5 36h3v3h-3zM15.5 39h33v3h-33z" fill="#2b1d2e"/><path d="M21.5 21h21v3h-21zM18.5 24h3v3h-3zM24.5 24h15v3h-15zM42.5 24h3v3h-3zM18.5 27h6v3h-6zM27.5 27h9v3h-9zM39.5 27h6v3h-6zM18.5 30h9v3h-9zM36.5 30h9v3h-9zM18.5 33h27v3h-27zM18.5 36h27v3h-27z" fill="#ffffff"/></g>
+<path d="M64 16h10v2h-10zM64 18h2v2h-2zM64 20h2v2h-2zM64 22h8v2h-8zM64 24h2v2h-2zM64 26h2v2h-2zM64 28h10v2h-10zM76 16h2v2h-2zM84 16h2v2h-2zM76 18h4v2h-4zM82 18h4v2h-4zM76 20h2v2h-2zM80 20h2v2h-2zM84 20h2v2h-2zM76 22h2v2h-2zM80 22h2v2h-2zM84 22h2v2h-2zM76 24h2v2h-2zM84 24h2v2h-2zM76 26h2v2h-2zM84 26h2v2h-2zM76 28h2v2h-2zM84 28h2v2h-2zM90 16h6v2h-6zM88 18h2v2h-2zM96 18h2v2h-2zM88 20h2v2h-2zM96 20h2v2h-2zM88 22h10v2h-10zM88 24h2v2h-2zM96 24h2v2h-2zM88 26h2v2h-2zM96 26h2v2h-2zM88 28h2v2h-2zM96 28h2v2h-2zM100 16h6v2h-6zM102 18h2v2h-2zM102 20h2v2h-2zM102 22h2v2h-2zM102 24h2v2h-2zM102 26h2v2h-2zM100 28h6v2h-6zM108 16h2v2h-2zM108 18h2v2h-2zM108 20h2v2h-2zM108 22h2v2h-2zM108 24h2v2h-2zM108 26h2v2h-2zM108 28h10v2h-10z" fill="#ffd9cc"/><path d="M63 15h10v2h-10zM63 17h2v2h-2zM63 19h2v2h-2zM63 21h8v2h-8zM63 23h2v2h-2zM63 25h2v2h-2zM63 27h10v2h-10zM75 15h2v2h-2zM83 15h2v2h-2zM75 17h4v2h-4zM81 17h4v2h-4zM75 19h2v2h-2zM79 19h2v2h-2zM83 19h2v2h-2zM75 21h2v2h-2zM79 21h2v2h-2zM83 21h2v2h-2zM75 23h2v2h-2zM83 23h2v2h-2zM75 25h2v2h-2zM83 25h2v2h-2zM75 27h2v2h-2zM83 27h2v2h-2zM89 15h6v2h-6zM87 17h2v2h-2zM95 17h2v2h-2zM87 19h2v2h-2zM95 19h2v2h-2zM87 21h10v2h-10zM87 23h2v2h-2zM95 23h2v2h-2zM87 25h2v2h-2zM95 25h2v2h-2zM87 27h2v2h-2zM95 27h2v2h-2zM99 15h6v2h-6zM101 17h2v2h-2zM101 19h2v2h-2zM101 21h2v2h-2zM101 23h2v2h-2zM101 25h2v2h-2zM99 27h6v2h-6zM107 15h2v2h-2zM107 17h2v2h-2zM107 19h2v2h-2zM107 21h2v2h-2zM107 23h2v2h-2zM107 25h2v2h-2zM107 27h10v2h-10z" fill="#ff5c38"/>
+<text x="63" y="44" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="700" fill="#2b1d2e" text-anchor="start">pushilkun@gmail.com</text>
+</svg>
